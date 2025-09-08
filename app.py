@@ -6,7 +6,7 @@ import scanner
 
 st.set_page_config(page_title="US Stock Scanner Demo", layout="wide")
 st.title("US Stock Scanner — Quality × Valuation (with Trend/Vol overlays)")
-st.caption("This UI calls your original pipeline 1:1. Use the controls to mirror your config flags.")
+
 
 with st.sidebar:
     st.header("Configuration")
@@ -104,3 +104,4 @@ if run_btn:
 
     with st.expander("Full snapshot (all columns)"):
         st.dataframe(out["res"], use_container_width=True)
+
