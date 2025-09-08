@@ -38,8 +38,6 @@ with st.sidebar:
 
     run_btn = st.button("Run scan", type="primary")
 
-st.markdown("This is the **same logic** as your script, just rendered to the page instead of printing to console.")
-
 if run_btn:
     overrides = {
         "TEST_MODE": TEST_MODE,
@@ -104,4 +102,5 @@ if run_btn:
 
     with st.expander("Full snapshot (all columns)"):
         st.dataframe(out["res"], use_container_width=True)
+
 
